@@ -36,16 +36,29 @@ h2{
 
 #presentation-container{
     padding:  2.5rem 7.5rem;
-    height: 45vh;
+    height: 100vh;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #presentation{
     width: 37.5rem;
-    position: relative;
-    top: calc(50% - 9rem);
+   
+}
+#quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quality > img{
+    margin: 0 2.5rem;
 }
 
 .container{
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
     text-align: center;
 }
 .container > p{
@@ -53,7 +66,22 @@ h2{
 }
 .container > button{
     margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;
 }
+.container > button:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
 .contact-title{
     margin-top: .5rem;
+}
+
+.background-gradient{
+    background: linear-gradient(180deg, #FFF, #d9d9d9);
+}
+
+.background-red{
+    background-color: #F84646;
+    color: #FFF;
 }
