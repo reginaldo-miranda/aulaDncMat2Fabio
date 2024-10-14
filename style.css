@@ -52,6 +52,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 #quality > img{
     margin: 0 2.5rem;
@@ -84,4 +85,33 @@ h2{
 .background-red{
     background-color: #F84646;
     color: #FFF;
+
+}
+
+.article-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.article-container:nth-child(even){
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+
+.artico-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0;
+    justify-content: space-between;
+}
+.artico-details > button{
+    font-size: 1rem;
+}
+
+
+.article-container:nth-child(even) > .artico-details{
+   margin: 0 0 0 2.5rem;
 }
